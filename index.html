@@ -1,0 +1,55 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" content="manifest.json">
+    <link rel="icon" href="cat.png" type="image/png">
+    <link rel="canonical" href="https://catclicker.vercel.app">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Cat Clicker is a game where you earn points.">
+    <meta name="keywords" content="cat, clicker, game, click, points, score">
+    <meta name="author" content="Ryan (github.com/spetterman66)">
+    <meta name="robots" content="index, follow">
+    <meta name="og:title" content="Cat Clicker">
+    <meta name="og:description" content="Cat Clicker is a game where you earn points.">
+    <meta name="og:image" content="cat.png">
+    <meta name="og:url" content="https://catclicker.vercel.app">
+    <meta name="og:site_name" content="Cat Clicker">
+    <meta name="og:locale" content="en_US">
+    <meta name="og:type" content="website">
+    <meta name="og:author" content="Ryan (github.com/spetterman66)">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="https://catclicker.vercel.app">
+    <meta name="twitter:creator" content="@spetterman66">
+    <title>Cat Clicker!</title>
+    <script src="game.js" defer></script>
+</head>
+
+<body onload="initialize()">
+    <div id="introduction">
+        <div class="introduction-text">
+            <h1>Welcome to this game called <b>Cat Clicker</b>!</h1>
+            <p>In this game you will click a cat in the middle of the screen and earn points, which you can use to earn
+                more
+                points.</p>
+        </div>
+        <button id="startbutton" onclick="start()">Let's go!</button>
+    </div>
+    <div id="game-body">
+        <div class="cat-body">
+            <p class="cat">🐱</p>
+        </div>
+        <div class="buttons">
+            <button id="actionbutton" title="Pet your cat!" aria-label="Pet your cat!" onclick="pet()">❤️</button>
+            <button id="reset" title="Reset your game" aria-label="Reset your game" onclick="reset()">🔄</button>
+            <button id="save" title="Save your game" aria-label="Save your game" onclick="save()">💾</button>
+            <button id="load" title="Load your game" aria-label="Load your game" onclick="load()">📂</button>
+            <div id="score"></div>
+        </div>
+    </div>
+</body>
+
+</html>
